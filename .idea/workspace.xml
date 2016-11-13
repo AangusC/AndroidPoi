@@ -9,48 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfeeae74-7253-4b8f-af9e-07f68b918af1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/drawable/banco.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/drawable/cgp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/drawable/colectivo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/drawable/local.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/poisApp.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/pois/adapter/CategoriaPoiAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/pois/adapter/PoiAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/pois/domain/Banco.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/pois/domain/CGP.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/pois/domain/Colectivo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/pois/domain/Comuna.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/pois/domain/Local.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/pois/domain/Poi.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/pois/service/ServicePois.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/poisapp/PoiDetailActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/poisapp/PoiDetailFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/poisapp/PoiListActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/java/edu/algo3/poisapp/PoiListFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/color/strip_background.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/layout-sw600dp/activity_poi_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/layout/activity_poi_app_bar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/layout/activity_poi_detail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/layout/activity_poi_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/layout/fragment_poi_detail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/layout/poi_list_fragment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/layout/poi_row.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/values-v21/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/values/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poisApp/src/main/res/values/styles.xml" />
-    </list>
+    <list default="true" id="bfeeae74-7253-4b8f-af9e-07f68b918af1" name="Default" comment="" />
     <ignored path="PoiFinder-rest.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
