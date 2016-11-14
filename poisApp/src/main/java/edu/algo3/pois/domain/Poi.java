@@ -24,6 +24,7 @@ public class Poi  implements Serializable {
         this.nombre = nombre;
     }
 
+
     public Poi (int id) {
         this.id = id;
     }
@@ -83,6 +84,18 @@ public class Poi  implements Serializable {
     public ArrayList<String> getDiasAtencion() {
         return diasAtencion;
     }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+
+    private String categoria;
+
 
     public void setDiasAtencion(ArrayList<String> diasAtencion) {
         this.diasAtencion = diasAtencion;

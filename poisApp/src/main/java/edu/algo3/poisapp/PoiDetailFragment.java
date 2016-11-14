@@ -30,7 +30,7 @@ public class PoiDetailFragment extends Fragment {
     /**
      * The dummy content this fragment is presenting.
      */
-    private Poi poi;
+    private Poi selectPoi;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -47,32 +47,72 @@ public class PoiDetailFragment extends Fragment {
             // Load the dummy content specified by the fragment
             // arguments. In a real-world scenario, use a Loader
             // to load content from a content provider.
-            poi = (Poi) getArguments().get(ARG_ITEM_ID);
+            selectPoi = (Poi) getArguments().get(ARG_ITEM_ID);
 
             Activity activity = this.getActivity();
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
             if (appBarLayout != null) {
-                appBarLayout.setTitle(poi.getNombre());
+                appBarLayout.setTitle(selectPoi.getNombre());
             } else {
-                activity.setTitle(poi.getNombre());
+                activity.setTitle(selectPoi.getNombre());
             }
         }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_poi_detail, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+        View rootView = null;
+
+
 
         // Show the dummy content as text in a TextView.
-        if (poi != null) {
-            ((TextView) rootView.findViewById(R.id.poi_categoria)).setText(poi.getTipo());
+        if (selectPoi != null) {
+
+            switch (selectPoi.getTipo()){
+                case "colectivo":
+                    rootView=colectivoView(inflater, container,savedInstanceState);
+                    break;
+                case "banco":
+                    rootView=bancoView(inflater, container,savedInstanceState);
+                    break;
+                case "local":
+                    rootView=localView(inflater, container,savedInstanceState);
+                    break;
+                case "cgp":
+                rootView=cgpView(inflater, container,savedInstanceState);
+                break;
+
+            }
+
+            ((TextView) rootView.findViewById(R.id.poi_categoria)).setText(selectPoi.getTipo());
             ImageView imgGenero = ((ImageView) rootView.findViewById(R.id.imgGenero));
-            imgGenero.setImageDrawable(getResources().getDrawable(new CategoriaPoiAdapter().getIconoGenero(poi)));
-            ((TextView) rootView.findViewById(R.id.dia_atencion)).setText(poi.getDiasAtencion().toString());
-            ((TextView) rootView.findViewById(R.id.poi_direccion)).setText(poi.getDireccion());
+            imgGenero.setImageDrawable(getResources().getDrawable(new CategoriaPoiAdapter().getIconoGenero(selectPoi)));
+
         }
 
+        return rootView;
+    }
+
+    private View colectivoView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState){
+        View rootView = inflater.inflate(R.layout.fragment_poi_colectivo_detail, container, false);
+
+    return rootView;
+    }
+    private View bancoView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState){
+        View rootView = inflater.inflate(R.layout.fragment_poi_banco_detail, container, false);
+        ((TextView) rootView.findViewById(R.id.dia_atencion)).setText(selectPoi.getDiasAtencion().toString());
+        ((TextView) rootView.findViewById(R.id.poi_direccion)).setText(selectPoi.getDireccion());
+        return rootView;
+    }
+    private View cgpView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState){
+        View rootView = inflater.inflate(R.layout.fragment_poi_cgp_detail, container, false);
+        ((TextView) rootView.findViewById(R.id.poi_direccion)).setText(selectPoi.getDireccion());
+        return rootView;
+    }
+    private View localView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState){
+        View rootView = inflater.inflate(R.layout.fragment_poi_local_detail, container, false);
+        ((TextView) rootView.findViewById(R.id.categoria)).setText(selectPoi.getCategoria().toString());
+        ((TextView) rootView.findViewById(R.id.poi_direccion)).setText(selectPoi.getDireccion());
         return rootView;
     }
 }

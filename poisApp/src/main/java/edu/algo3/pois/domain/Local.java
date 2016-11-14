@@ -3,8 +3,13 @@ package edu.algo3.pois.domain;
 /**
  * Created by Laboratorio on 01/11/2016.
  */
-public class Local {
+public class Local extends Poi {
     private String categoria;
+
+    public Local(int id) {
+        super(id);
+
+    }
 
     public String getCategoria () {
         return categoria;
@@ -14,8 +19,5 @@ public class Local {
         this. categoria = categoria;
     }
 
-//    protected void matcherXNombre(final String nombre) {
-//        return (this.claves.includes(_nombre) || this.categoria == _nombre || this.nombre.startsWith(_nombre));
- //   }
 
 }
